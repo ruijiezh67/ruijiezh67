@@ -1,88 +1,25 @@
 <p align="center">
-  <img src="ascii-portrait.svg" width="300" alt="ASCII portrait of Ruijie Zheng">
+  <img src="ascii-portrait.svg" width="400" alt="ASCII portrait">
 </p>
 
-<h3 align="center">Ruijie Zheng</h3>
+#### [ruijie_skills](https://github.com/ruijiezh67/ruijie_skills)
 
-<p align="center">
-  Computer Science at the University of Michigan · HCI, vision-language-action models, LLM security<br>
-  I build open-source tools that make AI agents' work checkable.
-</p>
+Skills for Claude Code that make an AI coding agent's work checkable. Install them with `/plugin marketplace add ruijiezh67/ruijie_skills`.
 
-<p align="center">
-  <a href="https://ruijiezh67.github.io">Website</a> ·
-  <a href="https://ruijiezh67.github.io/#publications">Publications</a> ·
-  <a href="https://www.linkedin.com/in/ruijie-zheng-51ba9b381/">LinkedIn</a> ·
-  Ann Arbor, MI
-</p>
-
----
-
-#### Open source
-
-| | |
+| skill | what it does |
 |---|---|
-| **[ruijie_skills](https://github.com/ruijiezh67/ruijie_skills)** | Claude Code skills, each aimed at a failure measured in real agent runs. **notary** gives every reported number a checkable receipt; **decoy** makes fake test data that can't be mistaken for real. Also shift-change (session handovers), runcard and runway. |
-| **[modfence](https://github.com/ruijiezh67/modfence)** | See a project as modules and prompt your coding agent about one of them; edits outside the module are blocked. |
-| **[can-an-agent](https://github.com/ruijiezh67/can-an-agent)** | Small, sourced experiments on what AI agents can and can't do: can an agent close the books, and can it post on 26 platforms. |
+| **notary** | Every number the agent reports (accuracy, cost, test counts) needs a receipt: the file and line, the command output, or the calculation it came from. A checker verifies each one, and anything not measured is written N/A, never 0. |
+| **decoy** | Fake test data that can't be mistaken for real: every email, phone, card number, SSN and IP comes from a range reserved by a published standard, the data comes from a seeded script, and a linter checks it. |
+| **shift-change** | Hands a long session over to a fresh one: a handover with next steps, rejected paths and your corrections, then a quiz for a new agent to prove nothing was lost. |
+| **runcard** | Before a training run or any costly command, shows every setting it will actually use and where each one came from, and asks once. |
+| **runway** | Plans your work around Claude's usage limits, so heavy tasks don't stop halfway. |
 
-**Contributions:** the notary and decoy agent skills to [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) ([#1270](https://github.com/Shubhamsaboo/awesome-llm-apps/pull/1270), [#1271](https://github.com/Shubhamsaboo/awesome-llm-apps/pull/1271)), after three rounds of maintainer review.
+notary and decoy are also contributed to [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) ([#1270](https://github.com/Shubhamsaboo/awesome-llm-apps/pull/1270), [#1271](https://github.com/Shubhamsaboo/awesome-llm-apps/pull/1271)).
 
-#### Research code
+#### [modfence](https://github.com/ruijiezh67/modfence)
 
-- **[VLA_tasks](https://github.com/ruijiezh67/VLA_tasks)**: backdoors in vision-language-action models that fire only under a physical deployment condition.
-- **[LRM_colab_tasks](https://github.com/ruijiezh67/LRM_colab_tasks)**: experiments on latent reasoning models (CoLaR, LT-Tuning, Latent-SFT, Coconut).
+See a project as modules and prompt your coding agent about one of them; edits outside that module are blocked.
 
-<details>
-<summary>The portrait as plain text</summary>
+#### [can-an-agent](https://github.com/ruijiezh67/can-an-agent)
 
-```text
-                            ..-.:===+:=:-+-=:
-                           :-===+****++**+==:
-                       :=+*#%@@@@@@@@@@@@@%#*%#*=--.
-                   .-+##%@@@@@@@@@@@@@@@@@@@@@@@@@@%*=:
-                :-+#%%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%#+-
-              -=*#%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%#=: .
-          .:-+*%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*==::
-          :=+#%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%#+=-.
-          :=#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%#+-.
-          -#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*+-
-         :*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#+=:
-        :+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#+-.
-       .+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*=:
-      .=%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*-:
-      -*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#+-.
-      -#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*=-
-      +%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%*=-
-      :%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%@@@@@@@@@%*+-.
-     .*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%%%%###%%@%%+*#*+#+#%#@@@@@%#*=-.
-.:-::+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%#*++=--=++++:=::.  ::*#@@@@@%**+==-
--++:.=@@@@@@@@%%%@@@@@@@@@@@@@@@@@@%%%#**+=--:.   .:::        -*@@@@@@%%##++
-+*+=:=%@@@@@@%##%@@@@@@@@@@@@@@@%###**+==--::.                :*%@@%%%@@%#*+
-+**+-+##@@@@@%#%@@@#*#%@@@@@@@@%#**++==--::..                 .#++=*#@@@%#*+
-+**#%%@@%%@@@%%@@@@%#*##%@@@@@%#**++==-----=---.              .#==-+%@@@%#*+
-+--#@@@@@@@@@%@@@@@@**##%%%%%%#**+===---------:..   .         :#=-*=%@@@%#*+
---=+#@@@@@@@@%%%@@@@%*##%%%%###**==::::----:.     ..---     :=**+=-#@@@@%#*+
- -==*@@@@@@@@@***#@@%**########*+=-.    .+%%#=:            .:@#**=*@@@@@%*+=
- .-=+#@@@@@@@%#****#***####*****+=:       .=*#*+-.       :--%@%***@@@@@#**+=
-  .=+*%@@@@@@%#***###****#******=-:                      .*@@@@@@@@@@%*=----
-  . -*#@@@@@@##****#*****#*****++=-.                      *@@@@@@@@%*==-:. .
-    .=:=#%@%%#******************++=-.                     @@@@@@@%**+=-:.
-    ....:=+*********************+=+-:.           ..      #@@@@@@@**+==-:
-    :=*#%*+******************+++==--..       =#+-:      *@@@@@@@%*++-::.
-    :-+*********************++==--:.         ##@+--+   +@@@@@@@@%++=-.
-     :==++************+**+++++=-:.            -=**%###@@@@@@@@@@#+--:
-      .-=++**********++++++++++=-.        :.        @@@@@@@@@@@@#=-:
-        :=++**********+++++++++==-...    =%%#*+-: -@@@@@@@@@@@@%*-.
-         .-==+++********+++++++++=-::      ::-=- .@@@@@@@@@@@@%*+.
-           .--==+++***###****++++++=:.          =@@@@@@@@@@@#*=-:
-             .::-==+++****#####**+==-:.       .@@@@@@@@@@@*+=-::.
-               ...:--==+++******++*=+=-:.    -@@@@@@@@@@%+==::.
-                   ..::-----=---:#@%%++-=:-:.*@@@@@@@@%#=--
-                         ....    *%@@+===+=#+=.=#@@%%%*+-.
-                                  +*##=:.-*==*:   .-==--.
-                                  .--=--  .--::      ..
-                                        .   ..
-```
-
-</details>
+Small, sourced experiments on what AI agents can and can't do: can an agent close the books, and can it post on 26 platforms.
