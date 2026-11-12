@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="ascii-portrait.svg" width="400" alt="ASCII portrait">
+  <img src="ascii-portrait.png" width="720" alt="ASCII portrait">
 </p>
 
 #### [ruijie_skills](https://github.com/ruijiezh67/ruijie_skills)
